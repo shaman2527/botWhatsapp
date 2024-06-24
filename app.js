@@ -22,7 +22,10 @@ const flowVoice = addKeyword(EVENTS.VOICE_NOTE).addAnswer("Esta es una nota de v
     const consulta = text
     const answer = await chat(prompt, consulta)
     await ctxFn.flowDynamic(answer.content)
+    console.log(answer.content);
 })
+
+
 
 const flowMenuRest = addKeyword(EVENTS.ACTION)
     .addAnswer('Este es el menu', {
@@ -42,24 +45,27 @@ const flowConsultas = addKeyword(EVENTS.ACTION)
         await ctxFn.flowDynamic(answer.content)
     })
 
+const flowHumano = addKeyword(EVENTS.ACTION)
+    .addAnswer('Espere breve momento sera atendido por un humano')     
+
 
 const flowWelcome = addKeyword(EVENTS.WELCOME)
-    .addAnswer("Este es el flujo Welcome", {
+    .addAnswer(["¡Hola dulceros!", 'Bienvenido a CHATBOT WSP', 'Explora nuestro menú: Tenemos de todo para tentar a tu paladar.', '¿Necesitas ayuda? ¡Estamos aquí para ti!', 'Para empezar, escribe (MENU).'], {
         delay: 100,
     },
-        async (ctx, ctxFn) => {
-            if (ctx.body.includes("Casas")) {
-                await ctxFn.flowDynamic("Escribiste casas")
-            } else {
-                await ctxFn.flowDynamic("Escribiste otra cosa")
-            }
-        })
+        // async (ctx, ctxFn) => {
+        //     if (ctx.body.includes("Casas")) {
+        //         await ctxFn.flowDynamic("Escribiste casas")
+        //     } else {
+        //         await ctxFn.flowDynamic("Explora nuestro menu tendemos variedad de productos, Estamos en Face Beta Hare Todo lo posible para guiarte SELECCIONA MENU..!")
+        //     }
+        )
 
 const menuFlow = addKeyword("Menu").addAnswer(
     menu,
     { capture: true },
     async (ctx, { gotoFlow, fallBack, flowDynamic }) => {
-        if (!["1", "2", "3", "0"].includes(ctx.body)) {
+        if (!["1", "2", "3", "4", "0"].includes(ctx.body)) {
             return fallBack(
                 "Respuesta no válida, por favor selecciona una de las opciones."
             );
@@ -71,6 +77,9 @@ const menuFlow = addKeyword("Menu").addAnswer(
                 return gotoFlow(flowReservar);
             case "3":
                 return gotoFlow(flowConsultas);
+             case "4":
+               return gotoFlow(flowHumano); 
+                
             case "0":
                 return await flowDynamic(
                     "Saliendo... Puedes volver a acceder a este menú escribiendo '*Menu*'"
@@ -84,7 +93,7 @@ const main = async () => {
         dbUri: process.env.MONGO_DB_URI,
         dbName: "YoutubeTest"
     })
-    const adapterFlow = createFlow([flowWelcome, menuFlow, flowMenuRest, flowReservar, flowConsultas, flowVoice])
+    const adapterFlow = createFlow([flowWelcome, menuFlow, flowMenuRest, flowReservar, flowConsultas, flowVoice, flowHumano])
     const adapterProvider = createProvider(BaileysProvider)
 
     createBot({

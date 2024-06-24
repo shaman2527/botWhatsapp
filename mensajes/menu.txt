@@ -1,7 +1,11 @@
-Elegi alguna de estas opciones:
+¡Hola! ¿Qué te apetece hoy?
+Elige:
 
-Opcion 1 - Menu
-Opcion 2 - Reservar mesa
-Opcion 3 - Hacer consultas
+(1) Menú: ¡Deléitate con nuestros sabores!
+(2) Catálogo: Descubre todo lo que tenemos.
+(3) Personalizado: Crea tu pedido ideal.
+(4) Humano: ¡Habla con nosotros!
+Volver: (MENU)
+Salir: (SALIR)
 
-Opcion 0 - Salir
+¿Qué deseas?
