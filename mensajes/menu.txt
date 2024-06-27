@@ -6,6 +6,6 @@ Elige:
 (3) Personalizado: Crea tu pedido ideal.
 (4) Humano: ¡Habla con nosotros!
 Volver: (MENU)
-Salir: (SALIR)
+(0): (SALIR)
 
 ¿Qué deseas?

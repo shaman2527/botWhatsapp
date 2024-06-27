@@ -1,4 +1,4 @@
-const { createBot, createProvider, createFlow, addKeyword, EVENTS } = require('@bot-whatsapp/bot')
+const { createBot, createProvider, createFlow, addKeyword, EVENTS, addAnswer } = require('@bot-whatsapp/bot')
 require("dotenv").config
 
 const QRPortalWeb = require('@bot-whatsapp/portal')
@@ -9,6 +9,7 @@ const path = require("path")
 const fs = require("fs")
 const chat = require("./chatGPT")
 const { handlerAI } = require("./whisper")
+const { addAbortSignal } = require('stream')
 
 const menuPath = path.join(__dirname, "mensajes", "menu.txt")
 const menu = fs.readFileSync(menuPath, "utf8")
@@ -85,14 +86,39 @@ const menuFlow = addKeyword("Menu").addAnswer(
                     "Saliendo... Puedes volver a acceder a este menú escribiendo '*Menu*'"
                 );
         }
+        
     }
 );
+
+
+// let nombre = ""
+// let apellidos = ""
+// let telefono = 0
+
+// const flow1 = addKeyword(['Hola', '⬅️ Volver al Inicio'])
+//   .addAnswer(
+//     ['Hola!', 'Para enviar el formulario necesito algunos datos...', 'Escriba su *Nombre*'],
+//     { capture: true, buttons: [{ body: '❌ Cancelar solicitud' }] },
+
+//     async (ctx, { flowDynamic, endFlow }) => {
+//       if (ctx.body === '❌ Cancelar solicitud') {
+//         return endFlow({
+//           body: '❌ Su solicitud ha sido cancelada ❌',
+//           buttons: [{ body: '⬅️ Volver al Inicio' }],
+//         });
+//       }
+
+//     }
+// )
+    
+
 
 const main = async () => {
     const adapterDB = new MongoAdapter({
         dbUri: process.env.MONGO_DB_URI,
         dbName: "YoutubeTest"
     })
+const flowFormulario = addKeyword(['Hola', '⬅️ Volver al Inicio'])
     const adapterFlow = createFlow([flowWelcome, menuFlow, flowMenuRest, flowReservar, flowConsultas, flowVoice, flowHumano])
     const adapterProvider = createProvider(BaileysProvider)
 

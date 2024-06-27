@@ -1,0 +1,439 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '584242347984@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0CBAD2F1A7A7CB243B0',
+    participant: undefined
+  },
+  messageTimestamp: 1719502052,
+  pushName: 'Naty',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'hola',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hola',
+  from: '584242347984'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584242347984@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB073364349D4831A8486',
+    participant: undefined
+  },
+  messageTimestamp: 1719502066,
+  pushName: 'Naty',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'hola',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hola',
+  from: '584242347984'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_934565dc-cf47-4d1c-960e-9e8925dedf1a',
+  keyword: 'key_a3cf2a62-f2d9-4f8d-99fd-1f9e6b29fd2e',
+  answer: '¡Hola dulceros!\n' +
+    'Bienvenido a CHATBOT WSP\n' +
+    'Explora nuestro menú: Tenemos de todo para tentar a tu paladar.\n' +
+    '¿Necesitas ayuda? ¡Estamos aquí para ti!\n' +
+    'Para empezar, escribe (MENU).',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 100,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '03d468eccfcc032d45ae4187b7228535'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584242347984@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0307A43D0159A7563B4',
+    participant: undefined
+  },
+  messageTimestamp: 1719502068,
+  pushName: 'Naty',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'menu',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'menu',
+  from: '584242347984'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_fb06535f-18b3-40c0-a5f5-2fddbe99c952',
+  keyword: 'key_64ad99a7-57c5-41c0-bdc9-70322fdc61f4',
+  answer: '¡Hola! ¿Qué te apetece hoy?\r\n' +
+    'Elige:\r\n' +
+    '\r\n' +
+    '(1) Menú: ¡Deléitate con nuestros sabores!\r\n' +
+    '(2) Catálogo: Descubre todo lo que tenemos.\r\n' +
+    '(3) Personalizado: Crea tu pedido ideal.\r\n' +
+    '(4) Humano: ¡Habla con nosotros!\r\n' +
+    'Volver: (MENU)\r\n' +
+    '(0): (SALIR)\r\n' +
+    '\r\n' +
+    '¿Qué deseas?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '224fa6e9b171d4c1a232ec58f0ceb7e5'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584242347984@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0792E6EFDA936D99C95',
+    participant: undefined
+  },
+  messageTimestamp: 1719502079,
+  pushName: 'Naty',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'hola',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hola',
+  from: '584242347984'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584242347984@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0FC87491B7F1535FCD9',
+    participant: undefined
+  },
+  messageTimestamp: 1719502097,
+  pushName: 'Naty',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '4',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '4',
+  from: '584242347984'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584242347984@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB045A13ADEC7E496E3DC',
+    participant: undefined
+  },
+  messageTimestamp: 1719502107,
+  pushName: 'Naty',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'menu',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'menu',
+  from: '584242347984'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_fb06535f-18b3-40c0-a5f5-2fddbe99c952',
+  keyword: 'key_64ad99a7-57c5-41c0-bdc9-70322fdc61f4',
+  answer: '¡Hola! ¿Qué te apetece hoy?\r\n' +
+    'Elige:\r\n' +
+    '\r\n' +
+    '(1) Menú: ¡Deléitate con nuestros sabores!\r\n' +
+    '(2) Catálogo: Descubre todo lo que tenemos.\r\n' +
+    '(3) Personalizado: Crea tu pedido ideal.\r\n' +
+    '(4) Humano: ¡Habla con nosotros!\r\n' +
+    'Volver: (MENU)\r\n' +
+    '(0): (SALIR)\r\n' +
+    '\r\n' +
+    '¿Qué deseas?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '224fa6e9b171d4c1a232ec58f0ceb7e5'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584242347984@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0BBEC7E6F13D010F8FD',
+    participant: undefined
+  },
+  messageTimestamp: 1719502111,
+  pushName: 'Naty',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: '3',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '3',
+  from: '584242347984'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584242347984@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB094D6F7B1BE47E8514C',
+    participant: undefined
+  },
+  messageTimestamp: 1719502172,
+  pushName: 'Naty',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'hola',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hola',
+  from: '584242347984'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584242347984@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0E9167C5AB59043E4CD',
+    participant: undefined
+  },
+  messageTimestamp: 1719502183,
+  pushName: 'Naty',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'queriau na torta',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'queriau na torta',
+  from: '584242347984'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_934565dc-cf47-4d1c-960e-9e8925dedf1a',
+  keyword: 'key_a3cf2a62-f2d9-4f8d-99fd-1f9e6b29fd2e',
+  answer: '¡Hola dulceros!\n' +
+    'Bienvenido a CHATBOT WSP\n' +
+    'Explora nuestro menú: Tenemos de todo para tentar a tu paladar.\n' +
+    '¿Necesitas ayuda? ¡Estamos aquí para ti!\n' +
+    'Para empezar, escribe (MENU).',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 100,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '03d468eccfcc032d45ae4187b7228535'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584242347984@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0C9E51B22219CCDA6',
+    participant: undefined
+  },
+  messageTimestamp: 1719502218,
+  pushName: 'Naty',
+  broadcast: false,
+  message: Message {
+    protocolMessage: ProtocolMessage {
+      key: [MessageKey],
+      type: 14,
+      editedMessage: [Message],
+      timestampMs: [Long]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '',
+  from: '584242347984'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584242347984@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0B9E74D5E696BCB7E5E',
+    participant: undefined
+  },
+  messageTimestamp: 1719502226,
+  pushName: 'Naty',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'meu',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'meu',
+  from: '584242347984'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_934565dc-cf47-4d1c-960e-9e8925dedf1a',
+  keyword: 'key_a3cf2a62-f2d9-4f8d-99fd-1f9e6b29fd2e',
+  answer: '¡Hola dulceros!\n' +
+    'Bienvenido a CHATBOT WSP\n' +
+    'Explora nuestro menú: Tenemos de todo para tentar a tu paladar.\n' +
+    '¿Necesitas ayuda? ¡Estamos aquí para ti!\n' +
+    'Para empezar, escribe (MENU).',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 100,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '03d468eccfcc032d45ae4187b7228535'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '584242347984@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0FA5516C2B2D6B2948A',
+    participant: undefined
+  },
+  messageTimestamp: 1719502228,
+  pushName: 'Naty',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'menu',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'menu',
+  from: '584242347984'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_fb06535f-18b3-40c0-a5f5-2fddbe99c952',
+  keyword: 'key_64ad99a7-57c5-41c0-bdc9-70322fdc61f4',
+  answer: '¡Hola! ¿Qué te apetece hoy?\r\n' +
+    'Elige:\r\n' +
+    '\r\n' +
+    '(1) Menú: ¡Deléitate con nuestros sabores!\r\n' +
+    '(2) Catálogo: Descubre todo lo que tenemos.\r\n' +
+    '(3) Personalizado: Crea tu pedido ideal.\r\n' +
+    '(4) Humano: ¡Habla con nosotros!\r\n' +
+    'Volver: (MENU)\r\n' +
+    '(0): (SALIR)\r\n' +
+    '\r\n' +
+    '¿Qué deseas?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '224fa6e9b171d4c1a232ec58f0ceb7e5'
+}
